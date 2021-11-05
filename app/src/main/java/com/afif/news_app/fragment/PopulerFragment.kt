@@ -14,20 +14,22 @@ import com.afif.news_app.adapter.NewsAdapter
 import com.afif.news_app.R
 import com.afif.news_app.initViewHeadline
 
-class AllNewsFragment : Fragment() {
+
+class PopulerFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_all_news, container, false)
+        val view = inflater.inflate(R.layout.fragment_populer, container, false)
 
-        val rvNews = view.findViewById<RecyclerView>(R.id.rv_all_news)
+        val rvNews = view.findViewById<RecyclerView>(R.id.rv_popular_news)
         rvNews.layoutManager = LinearLayoutManager(view.context)
-        rvNews.adapter = NewsAdapter(DataNews.listAllNews)
+        rvNews.adapter = NewsAdapter(DataNews.listPopularNews)
 
         val newsHeadline = view.findViewById<View>(R.id.news_headline)
-        initViewHeadline(view.context, newsHeadline,0 )
+        initViewHeadline(view.context, newsHeadline,1 )
 
         return view
     }

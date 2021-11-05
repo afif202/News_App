@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/gray_bg"
     android:orientation="vertical"
-    tools:context=".fragment.TopFragment">
+    tools:context=".fragment.PopulerFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             layout="@layout/news_headline" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_top_news"
+            android:id="@+id/rv_popular_news"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white"

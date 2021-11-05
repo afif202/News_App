@@ -5,10 +5,16 @@
       <map>
         <entry key="app/src/main/res/drawable/bg_splash_screen.xml" value="0.321025641025641" />
         <entry key="app/src/main/res/drawable/splash_screen.xml" value="0.2564814814814815" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.2864583333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/fragment_all_news.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.2864583333333333" />
+        <entry key="app/src/main/res/layout/fragment_popular.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/fragment_populer.xml" value="0.2864583333333333" />
         <entry key="app/src/main/res/layout/fragment_top.xml" value="0.2953703703703704" />
+        <entry key="app/src/main/res/layout/news_headline.xml" value="0.2800925925925926" />
+        <entry key="app/src/main/res/layout/row_item_news.xml" value="0.1494832540216699" />
       </map>
     </option>
   </component>
