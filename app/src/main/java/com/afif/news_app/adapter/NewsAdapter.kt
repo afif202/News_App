@@ -1,11 +1,13 @@
 package com.afif.news_app.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.afif.news_app.DetailActivity
 import com.afif.news_app.R
 import com.afif.news_app.data.News
 
@@ -18,7 +20,6 @@ class NewsAdapter(private val listNews: ArrayList<News>) :
         val tvDate: TextView = view.findViewById(R.id.tv_date)
         val tvTime: TextView = view.findViewById(R.id.tv_time)
         val imgNews: ImageView = view.findViewById(R.id.img_news)
-
 
     }
 
@@ -35,6 +36,11 @@ class NewsAdapter(private val listNews: ArrayList<News>) :
             tvTime.text = listNews[position].time
             imgNews.setImageResource(listNews[position].image)
 
+            itemView.setOnClickListener{
+                val intent = Intent(holder.tvTitle.context, DetailActivity::class.java)
+                intent.putExtra(DetailActivity.EXTRA_NEWS_DATA, listNews[position])
+                itemView.context.startActivity(intent)
+            }
         }
     }
 
