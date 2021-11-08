@@ -4,5 +4,6 @@
 * Study using GitHub for share project.
 * Added SplashScreen
 * Compose the main view with TablayoutMediator
+* ![Uploading Screenshot_1636337312.png…]()
 
 ## Thuesday, 26 October 2021
